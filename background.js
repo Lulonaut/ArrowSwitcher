@@ -7,7 +7,7 @@ async function changeTab(amount) {
         if (i + amount >= 0 && i + amount < tabs.length) {
           let newTabId = tabs[i + amount].id;
           chrome.tabs.update(newTabId, { highlighted: true });
-          chrome.tabs.update(tab.id, {highlighted: false});
+          chrome.tabs.update(tab.id, { highlighted: false });
         }
       }
     }
