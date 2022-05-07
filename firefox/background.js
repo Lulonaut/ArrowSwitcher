@@ -14,7 +14,6 @@ async function changeTab(amount) {
 }
 
 browser.commands.onCommand.addListener((command) => {
-  console.log(command);
   if (command === "tab-left") {
     changeTab(-1);
   } else if (command === "tab-right") {
